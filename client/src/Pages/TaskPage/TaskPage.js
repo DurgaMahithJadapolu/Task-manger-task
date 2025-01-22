@@ -79,7 +79,7 @@ const App = () => {
         <div className="app">
           <div>
             <h1>Task Management</h1>
-            <p>Drag and drog And Button Functionaly is there </p>
+            <p>Drag and Drop functionality And Button functionality both are working here...</p>
             <button className="create-task-button" onClick={handleOpenPopup}>
               Create Task
             </button>
