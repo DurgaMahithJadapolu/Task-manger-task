@@ -12,7 +12,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/user/login", { email, password });
+      const response = await axios.post("https://task-manger-task.onrender.com/api/user/login", { email, password });
       localStorage.setItem("token", response.data.token);  // Store JWT
       alert("Login successful");
       navigate("/home");  // Redirect to home page after successful login

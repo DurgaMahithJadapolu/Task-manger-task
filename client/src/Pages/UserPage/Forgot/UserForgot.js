@@ -13,7 +13,7 @@ function UpdatePasswordForm() {
     setMessage('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/user/forgot-password', {
+      const response = await axios.post('https://task-manger-task.onrender.com/api/user/forgot-password', {
         email,
         newPassword
       });

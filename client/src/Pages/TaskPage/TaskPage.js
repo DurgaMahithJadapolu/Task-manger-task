@@ -8,7 +8,7 @@ import TaskForm from "../../Compontents/TaskComponents/TaskFrom";
 import TaskColumn from "../../Compontents/TaskComponents/TaskColunm";
 import "./Task.css";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://task-manger-task.onrender.com/api/tasks";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -79,6 +79,7 @@ const App = () => {
         <div className="app">
           <div>
             <h1>Task Management</h1>
+            <p>Drag and drog And Button Functionaly is there </p>
             <button className="create-task-button" onClick={handleOpenPopup}>
               Create Task
             </button>

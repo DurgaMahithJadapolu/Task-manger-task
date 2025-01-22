@@ -12,7 +12,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/user/register", { name, email, password });
+      await axios.post("https://task-manger-task.onrender.com/api/user/register", { name, email, password });
       alert("Registration successful");
       navigate("/login"); // Navigate to the login page after successful registration
     } catch (err) {

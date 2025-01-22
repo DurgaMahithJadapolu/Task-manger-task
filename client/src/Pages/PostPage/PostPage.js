@@ -19,7 +19,7 @@ const App = () => {
   // Fetch all posts
   const fetchPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/posts/all");
+      const response = await axios.get("https://task-manger-task.onrender.com/api/posts/all");
       setPosts(response.data);
     } catch (error) {
       console.error("Error fetching posts:", error);
@@ -40,7 +40,7 @@ const App = () => {
   const createPost = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/posts/create", formData);
+      await axios.post("https://task-manger-task.onrender.com/api/posts/create", formData);
       fetchPosts();
       setFormData({ title: "", content: "", imageUrl: "" });
       setIsPopupOpen(false);
@@ -54,7 +54,7 @@ const App = () => {
     e.preventDefault();
     try {
       await axios.put(
-        `http://localhost:5000/api/posts/${currentPostId}`,
+        `https://task-manger-task.onrender.com/api/posts/${currentPostId}`,
         formData
       );
       fetchPosts();
@@ -70,7 +70,7 @@ const App = () => {
   // Delete a post
   const deletePost = async (postId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/posts/${postId}`);
+      await axios.delete(`https://task-manger-task.onrender.com/api/posts/${postId}`);
       fetchPosts();
     } catch (error) {
       console.error("Error deleting post:", error);

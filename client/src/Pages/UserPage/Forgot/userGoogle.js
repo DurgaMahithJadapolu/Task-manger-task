@@ -6,7 +6,7 @@ function GoogleOAuth() {
   const handleSuccess = async (response) => {
     const tokenId = response.tokenId;
     try {
-      await axios.post("http://localhost:5000/api/google-login", { tokenId });
+      await axios.post("https://task-manger-task.onrender.com/api/google-login", { tokenId });
       alert("Google Login Successful");
     } catch (err) {
       alert("Google Login Failed");
