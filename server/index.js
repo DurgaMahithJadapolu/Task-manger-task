@@ -9,7 +9,7 @@ const app = express();
 
 // Enable CORS for React frontend
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://taskmanger-kappa.vercel.app',
 }));
 
 // Middleware
