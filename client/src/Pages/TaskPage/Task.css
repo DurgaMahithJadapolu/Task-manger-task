@@ -139,6 +139,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: -30px;
 }
 
 /* Hover effect for the button */
