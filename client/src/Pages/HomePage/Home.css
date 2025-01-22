@@ -1,0 +1,61 @@
+.home-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .main-content {
+    margin: 20px 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  .cta-button {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .cta-button:hover {
+    background-color: #4CAF50;
+  }
+  
+  /* Features Section */
+  .features, .how-it-works, .testimonials, .cta-section {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  /* Remove Bullet Points */
+  .features ul, .how-it-works ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .features li, .how-it-works li {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  /* Testimonials Section */
+  .testimonials .testimonial {
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .testimonials .testimonial span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+ 

@@ -1,0 +1,102 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #002a5c;
+  color: #ffffff;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  max-width: 300px;
+}
+
+.logo-content{
+  max-width: 300px;
+   font-size: 14px;
+}
+
+.logo-image {
+  width: 200px;
+}
+
+.footer-links,
+.footer-social {
+  margin: 10px 20px;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 16px;
+   margin-Top:25px;
+  margin-bottom: 10px;
+
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  margin-bottom: 5px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+ 
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: none; /* Optional: Add underline effect */
+  transform: scale(1.1); /* Slightly zoom in */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth zoom effect */
+  color: #007bff; /* Optional: Change text color on hover */
+}
+
+
+
+
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+ 
+}
+
+.social-icons a {
+  display: flex;
+  font-size: 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff ;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 29px;
+ 
+
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #ffffff;
+  margin: 10px 0;
+}
