@@ -1,31 +1,23 @@
-import React from "react";
-import { GoogleLogin } from "react-google-login";
-import axios from 'axios';
+import React from 'react';
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
-function GoogleOAuth() {
-  const handleSuccess = async (response) => {
-    const tokenId = response.tokenId;
-    try {
-      await axios.post("https://task-manger-task.onrender.com/api/google-login", { tokenId });
-      alert("Google Login Successful");
-    } catch (err) {
-      alert("Google Login Failed");
-    }
+const App = () => {
+  const handleSuccess = (response) => {
+    console.log('Login Success:', response);
   };
 
-  const handleFailure = (error) => {
-    alert("Google Login Failed");
+  const handleError = () => {
+    console.error('Login Failed');
   };
 
   return (
-    <GoogleLogin
-      clientId="YOUR_GOOGLE_CLIENT_ID"
-      buttonText="Login with Google"
-      onSuccess={handleSuccess}
-      onFailure={handleFailure}
-      cookiePolicy="single_host_origin"
-    />
+    <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+      <div>
+        <h1>Google Login Example</h1>
+        <GoogleLogin onSuccess={handleSuccess} onError={handleError} />
+      </div>
+    </GoogleOAuthProvider>
   );
-}
+};
 
-export default GoogleOAuth;
+export default App;
